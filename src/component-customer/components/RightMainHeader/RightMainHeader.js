@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import OutlinedButton from '../OutlinedButton';
+import OutlinedButton from '../../../commonComponents/OutlinedButton';
 
-import cartIcon from '../../assets/images/cart.png';
+import cartIcon from '../../../assets/images/cart.png';
 import './RightMainHeader.scss';
 
 function RightMainHeader() {

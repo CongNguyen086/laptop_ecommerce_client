@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-import AutocompleteSearch from '../../../../commonComponents/AutocompleteSearch';
+import AutocompleteSearch from '../../../commonComponents/AutocompleteSearch';
 import RightMainHeader from '../RightMainHeader';
 
 import './TopHeader.scss';
-import logoImage from '../../assets/images/logo.png';
+import logoImage from '../../../assets/images/logo.png';
 
 function TopHeader(props) {
   const {

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { compose } from 'recompose';
 
-import TopHeader from '../../commonComponents/TopHeader';
+import TopHeader from '../../components/TopHeader';
 
 function AuthenRoute({
-  component: Component, pageTitle, ...rest
+  component: Component, pageTitle, path, match, ...rest
 }) {
   useEffect(() => {
     updatePageTitle();
@@ -21,6 +22,7 @@ function AuthenRoute({
   return (
     <Route
       {...rest}
+      path={`${match.url + path}`}
       render={(props) => {
         if (currentUser.id) {
           return (
@@ -45,4 +47,7 @@ const mapStateToProps = (state) => ({
   currentUser: selectors.getCurrentUser(state),
 });
 
-export default connect(mapStateToProps)(AuthenRoute);
+export default compose(
+  connect(mapStateToProps),
+  withRouter,
+)(AuthenRoute);

@@ -1,4 +1,4 @@
-@import "../../constants/styles.scss";
+@import "../../../constants/styles.scss";
 
 .TopHeader {
   box-sizing: border-box;
@@ -16,7 +16,7 @@
 }
 
 .TopHeader__right {
-  width: 250px;
+  width: 10vw;
 }
 
 .TopHeader__menuList {

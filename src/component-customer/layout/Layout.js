@@ -3,17 +3,17 @@ import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import capitalize from 'lodash/capitalize';
 
-import { axiosInstance } from '../axios';
-import actions from './redux/actions';
-import selectors from './redux/selectors';
+import { axiosInstance } from '../../axios';
+import actions from '../../redux/actions';
+import selectors from '../../redux/selectors';
 // Router Components
-import RouterConfig from './navigation/RouterConfig';
+import RouterConfig from '../navigation/RouterConfig';
 import AuthenRoute from '../navigation/AuthenRoute';
 // Render Components
-import Login from './screens/Login';
-import TopHeader from './components/TopHeader';
+import Login from '../screens/Login';
+import TopHeader from '../components/TopHeader';
 
-function CustomerLayout() {
+function CustomerLayout(props) {
   const { categoryList, setCategoryList } = props;
 
   const getCategoryMenu = useCallback(async () => {
