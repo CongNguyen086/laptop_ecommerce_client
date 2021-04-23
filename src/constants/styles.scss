@@ -1,0 +1,69 @@
+// Dimensions
+$top-bar-height: 47px;
+$button-width: 46px;
+$button-height: 46px;
+$icon-width: 24px;
+$icon-height: 24px;
+$panel-width: 300px;
+
+// Mobile dimensions
+$top-bar-height-m: 42px;
+$button-width-m: 41px;
+$button-height-m: 41px;
+$search-overlay-height-m: 61px;
+
+// Colors
+$primary: #ff6900;
+$dark-grey: #202124;
+$black-8: rgba(0, 0, 0, 0.08);
+
+// Shadows
+$md-shadow1: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+// Screens
+$tablet-width: 1024px;
+$mobile-width: 640px;
+
+%open {
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+%closed {
+  &.closed {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width + 1px}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-and-mobile {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin ie11 {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
