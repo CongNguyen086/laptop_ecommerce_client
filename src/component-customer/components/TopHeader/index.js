@@ -1,3 +1,3 @@
-import TopHeader from './TopHeader.js';
+import TopHeader from './TopHeader';
 
 export default TopHeader;

@@ -1,3 +1,3 @@
-import RouterConfig from './RouterConfig.js';
+import RouterConfig from './RouterConfig';
 
 export default RouterConfig;

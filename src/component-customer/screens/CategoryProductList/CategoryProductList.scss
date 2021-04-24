@@ -1,0 +1,10 @@
+@import "../../../constants/styles.scss";
+
+.CategoryProductList__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CategoryProductList__filterContainer {
+  width: 15vw;
+}

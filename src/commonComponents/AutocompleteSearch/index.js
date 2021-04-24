@@ -1,3 +1,3 @@
-import AutocompleteSearch from './AutocompleteSearch.js';
+import AutocompleteSearch from './AutocompleteSearch';
 
 export default AutocompleteSearch;

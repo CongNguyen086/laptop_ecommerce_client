@@ -13,15 +13,17 @@ import AuthenRoute from '../navigation/AuthenRoute';
 import Login from '../screens/Login';
 import TopHeader from '../components/TopHeader';
 
+import './Layout.scss';
+
 function CustomerLayout(props) {
   const { categoryList, setCategoryList } = props;
 
   const getCategoryMenu = useCallback(async () => {
-    const response = await axiosInstance.get('/category');
+    const response = await axiosInstance.get('/category/all');
     const categories = response.data;
     setCategoryList(categories.map((category) => ({
       text: capitalize(category.name),
-      url: `/${category.name}`,
+      url: `/product/${category.name}`,
       onClick: () => { },
     })));
   }, []);
@@ -38,10 +40,12 @@ function CustomerLayout(props) {
       ) : (
         <>
           <TopHeader categoryMenu={categoryList} />
-          <Component
-            {...props}
-            pageTitle={pageTitle}
-          />
+          <div className='Layout__container'>
+            <Component
+              {...props}
+              pageTitle={pageTitle}
+            />
+          </div>
         </>
       )
     );

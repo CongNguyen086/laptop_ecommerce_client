@@ -1,6 +1,7 @@
 import { Redirect } from 'react-router-dom';
-import Home from '../../screens/Home';
 import Login from '../../screens/Login';
+import Home from '../../screens/Home';
+import CategoryProductList from '../../screens/CategoryProductList';
 
 const RouterConfig = [
   {
@@ -23,6 +24,13 @@ const RouterConfig = [
     exact: true,
     auth: false,
     pageTitle: 'Aware Laptop - Homepage',
+  },
+  {
+    path: '/product/:category',
+    component: CategoryProductList,
+    exact: true,
+    auth: false,
+    pageTitle: 'Aware Laptop - Product',
   },
 ];
 

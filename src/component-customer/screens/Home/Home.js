@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+
+import './Home.scss';
 
 function Home(props) {
   return (
-    <div>
-      HomePage
+    <div className='Home__container'>
+      
     </div>
   )
 }

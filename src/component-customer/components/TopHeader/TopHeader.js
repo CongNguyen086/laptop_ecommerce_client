@@ -46,7 +46,6 @@ function TopHeader(props) {
             <NavLink
               to={item.url}
               onClick={() => handleClickMenuItem(item)}
-              isActive={item.isActive}
             >
               <span>{item.text}</span>
             </NavLink>
