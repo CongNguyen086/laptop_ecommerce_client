@@ -1091,7 +1091,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.13.10":
   version "7.13.17"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.17.tgz#8966d1fc9593bf848602f0662d6b4d0069e3a7ec"
   integrity sha512-NCdgJEelPTSh+FEFylhnP1ylq848l1z9t9N0j1Lfbcw0+KXGjsTvUmkxy+voLLXB5SOKMbLLx4jxYliGrYQseA==
@@ -1157,6 +1157,46 @@
   dependencies:
     exec-sh "^0.3.2"
     minimist "^1.2.0"
+
+"@coreui/coreui@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-3.4.0.tgz#3e3627a1f48a00f6289204a23f71eaa6ea94e370"
+  integrity sha512-WqzockdWVkXUNmNwlqdu+AxM+9JoiWGe4rKaySu/dZme1NvVOn2ukjJlpTkssal8UKcSHyitzNixtkMCmUxE1A==
+
+"@coreui/icons-react@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@coreui/icons-react/-/icons-react-1.1.0.tgz#c1462663f895818cc58adb97a0c19568cbb76254"
+  integrity sha512-OXDg09RsxlK5t6WizudsJUxgzJSAHeytwVG1hqn2ww5zIrJn5++5rNTp95N/kff4/er4f7jspwJ1/7n6mQAz2Q==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+
+"@coreui/icons@^2.0.0", "@coreui/icons@^2.0.0-rc.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@coreui/icons/-/icons-2.0.1.tgz#778022fe2b366abf9594d142607026e4edc667f8"
+  integrity sha512-gBfFRLPUt3Bv9EZbJRbT3sQRHrhH0c4dRbeE9GpWJgJY8kvE9+3Hf5xGK9XyQhFynHx4o2WQeMxsReQLddlK9w==
+
+"@coreui/react@^3.4.6":
+  version "3.4.6"
+  resolved "https://registry.yarnpkg.com/@coreui/react/-/react-3.4.6.tgz#17b984305af1aeb4a5083785b1ea016e590c3c2c"
+  integrity sha512-qu9/2kDNb24jXMaoGolOM5Jp9+wdweVWPJFixnAOMCobhUt0TNHa9yJakCfr7mopMV8teYvWBjBhl5I2er1/xw==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@coreui/icons" "^2.0.0-rc.0"
+    "@coreui/icons-react" "^1.1.0"
+    "@coreui/utils" "~1.3.1"
+    "@popperjs/core" "^2.9.1"
+    classnames "~2.2.6"
+    core-js "^3.9.1"
+    perfect-scrollbar "~1.5.0"
+    prop-types "~15.7.2"
+    react-transition-group "~4.4.1"
+    tippy.js "^6.3.1"
+
+"@coreui/utils@^1.3.1", "@coreui/utils@~1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@coreui/utils/-/utils-1.3.1.tgz#ebe6fa00ae7f46d166b26f116e74d55dfc89f5e0"
+  integrity sha512-WuWHX7bg89cJH34TWVsLe9RsxzBhTApj+X2Ja19xhjcpxt5Gv11Ozm+fwYt6DD7DgncTvpwYrMcnNlpp701UOg==
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -1530,6 +1570,11 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
     source-map "^0.7.3"
+
+"@popperjs/core@^2.8.3", "@popperjs/core@^2.9.1":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
+  integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
@@ -3418,10 +3463,15 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.3.1:
+classnames@^2.2.6, classnames@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
+classnames@~2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
 clean-css@^4.2.3:
   version "4.2.3"
@@ -3717,6 +3767,11 @@ core-js@^3.6.5:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.9.0.tgz#790b1bb11553a2272b36e2625c7179db345492f8"
   integrity sha512-PyFBJaLq93FlyYdsndE5VaueA9K5cNB7CGzeCj191YYLhkQM0gdZR2SKihM70oF0wdqKSKClv/tEBOpoRmdOVQ==
+
+core-js@^3.9.1:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.11.0.tgz#05dac6aa70c0a4ad842261f8957b961d36eb8926"
+  integrity sha512-bd79DPpx+1Ilh9+30aT5O1sgpQd4Ttg8oqkqi51ZzhedMM1omD2e6IOF48Z/DzDCZ2svp49tN/3vneTK6ZBkXw==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -8576,6 +8631,11 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+perfect-scrollbar@~1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.5.0.tgz#821d224ed8ff61990c23f26db63048cdc75b6b83"
+  integrity sha512-NrNHJn5mUGupSiheBTy6x+6SXCFbLlm8fVZh9moIzw/LgqElN5q4ncR4pbCBCYuCJ8Kcl9mYM0NgDxvW+b4LxA==
+
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -9420,7 +9480,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.2, prop-types@^15.7.2, prop-types@~15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9772,7 +9832,7 @@ react-scripts@4.0.3:
   optionalDependencies:
     fsevents "^2.1.3"
 
-react-transition-group@^4.4.0:
+react-transition-group@^4.4.0, react-transition-group@~4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
   integrity sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
@@ -11341,6 +11401,13 @@ tiny-warning@^1.0.0, tiny-warning@^1.0.2, tiny-warning@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
+
+tippy.js@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-6.3.1.tgz#3788a007be7015eee0fd589a66b98fb3f8f10181"
+  integrity sha512-JnFncCq+rF1dTURupoJ4yPie5Cof978inW6/4S6kmWV7LL9YOSEVMifED3KdrVPEG+Z/TFH2CDNJcQEfaeuQww==
+  dependencies:
+    "@popperjs/core" "^2.8.3"
 
 tmpl@1.0.x:
   version "1.0.4"

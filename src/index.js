@@ -6,6 +6,9 @@ import './index.css';
 import App from './app/App';
 import { store } from './redux/store';
 import reportWebVitals from './reportWebVitals';
+import { icons } from './assets/icons/index';
+
+React.icons = icons
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,8 +1,9 @@
 import React, { useEffect, useCallback } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CustomerLayout from '../component-customer/layout/Layout';
+import AdminLayout from '../component-admin/layout/Layout';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           path=''
           render={(props) => {
             window.scrollTo(0, 0);
-            return <CustomerLayout {...props} />;
+            return <AdminLayout {...props} />;
           }}
         />
         <Route
@@ -21,7 +22,7 @@ function App() {
           path='/admin'
           render={(props) => {
             window.scrollTo(0, 0);
-            return <CustomerLayout {...props} />;
+            return <AdminLayout {...props} />;
           }}
         />
       </Switch>

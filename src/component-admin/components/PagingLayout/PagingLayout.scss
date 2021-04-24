@@ -1,0 +1,11 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    td {
+        vertical-align: inherit;
+    }
+}
+
+.table-responsive {
+    flex: 2;
+}
